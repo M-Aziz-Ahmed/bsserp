@@ -60,11 +60,11 @@ const CardsSection = () => {
         <section className="py-5 bg-secondary">
             <div className="container">
                 <div className="mb-5">
-                    <span className="badge bg-dark text-white px-3 py-2 mb-3">
+                    <span className="badge bg-dark text-white px-3 py-2 mb-3 fs-6">
                         Leading The Path To Innovation
                     </span>
                     <h2 className="display-5 fw-bold text-white mb-3">
-                        Transform Your Business with SowaanERP
+                        Transform Your Business with BSSERP
                     </h2>
                     <p className="lead text-light">
                         Custom ERP solutions designed for your unique business needs in Pakistan and beyond.
@@ -81,8 +81,10 @@ const CardsSection = () => {
                                     </div>
                                     <h3 className="h4 card-title mb-3">{card.title}</h3>
                                     <p className="card-text text-muted mb-4">{card.desc}</p>
-                                    <Link href={card.link} className="btn btn-outline-dark stretched-link">
-                                        Learn More
+                                    <Link href={card.link} className="nav-link">
+                                    <div className="mt-3 text-secondary fw-semibold">
+                                            Learn more →
+                                        </div>
                                     </Link>
                                 </div>
                             </div>
