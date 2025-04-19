@@ -62,7 +62,7 @@ const ReviewsSlider = () => {
         <Swiper
           modules={[Navigation, Pagination]}
           spaceBetween={30}
-          slidesPerView={1}
+          slidesPerView={3}
           navigation
           pagination={{ clickable: true }}
           breakpoints={{
@@ -87,7 +87,6 @@ const ReviewsSlider = () => {
                   ))}
                 </div>
                 <p className="text-gray-600 mb-4 line-clamp-3">{review.review}</p>
-                <a href={review.readMoreLink} className="text-blue-600 hover:underline">Read more</a>
                 <div className="mt-4 pt-4 border-t border-gray-100">
                   <h4 className="font-semibold">{review.name}</h4>
                   <p className="text-gray-500 text-sm">{review.role}, {review.company}</p>
