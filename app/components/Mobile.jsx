@@ -72,11 +72,14 @@ const Mobile = () => {
 
                     {/* Image Column */}
                     <div className="col-lg-6">
-                        <div className="position-relative rounded-4 overflow-hidden shadow-lg">
-                            <Image 
-                                src={'/mobile.png'} 
-                                height={600} 
-                                width={600} 
+                        <div
+                            className={`position-relative rounded-4 overflow-hidden shadow-lg
+                               `}
+                        >
+                            <Image
+                                src={'/mobile.png'}
+                                height={600}
+                                width={600}
                                 alt="Mobile ERP implementation illustration"
                                 className="img-fluid"
                                 priority

@@ -8,6 +8,7 @@ import Scorecard from "./components/cards/scorecard";
 import Mobile from "./components/Mobile";
 import Customerservice from "./components/Customerservice";
 import Partners from "./components/partners";
+import ClientStories from "./components/ClientStories";
 
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
     <Mobile/>
     <Customerservice/>
     <Partners/>
+    <ClientStories/>
     </>
   );
 }
