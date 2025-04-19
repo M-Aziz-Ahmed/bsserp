@@ -62,7 +62,7 @@ const ReviewsSlider = () => {
         <Swiper
           modules={[Navigation, Pagination]}
           spaceBetween={30}
-          slidesPerView={3}
+          slidesPerView={1}
           navigation
           pagination={{ clickable: true }}
           breakpoints={{
