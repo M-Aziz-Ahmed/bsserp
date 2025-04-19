@@ -54,7 +54,8 @@ const ReviewsSlider = () => {
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-2">Client Reviews</h2>
+          <h2 className="display-5 fw-bold text-dark mb-3">Client Reviews</h2>
+          <div className="mx-auto mb-4" style={{ width: '100px', height: '4px', backgroundColor: '#FFC107' }}></div>
           <p className="text-lg text-gray-600">What they say about us</p>
         </div>
 
