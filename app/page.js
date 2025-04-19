@@ -9,6 +9,7 @@ import Mobile from "./components/Mobile";
 import Customerservice from "./components/Customerservice";
 import Partners from "./components/partners";
 import ClientStories from "./components/ClientStories";
+import ReviewCard from "./components/ReviewCard";
 
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
     <Customerservice/>
     <Partners/>
     <ClientStories/>
+    <ReviewCard />
     </>
   );
 }
