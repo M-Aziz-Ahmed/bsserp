@@ -65,8 +65,8 @@ const Partners = () => {
     <section className="py-5 bg-light">
       <div className="container">
         <div className="text-center mb-5">
-          <h2 className="display-5 fw-bold text-dark">Our Selected Partners</h2>
-          <div className="mx-auto" style={{ width: '100px', height: '3px', backgroundColor: '#FFC107' }}></div>
+          <h2 className="display-5 fw-bold text">Our Selected Partners</h2>
+          <div className="mx-auto bg-highlight" style={{ width: '100px', height: '3px'}}></div>
         </div>
 
         <div className="row g-4 justify-content-center">

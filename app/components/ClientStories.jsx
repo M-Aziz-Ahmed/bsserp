@@ -27,9 +27,9 @@ const TrustedCustomers = () => {
     <section className="py-5 bg-light">
       <div className="container py-5">
         <div className="text-center mb-5">
-          <h2 className="display-5 fw-bold text-dark mb-3">Successful Client Stories</h2>
-          <div className="mx-auto mb-4" style={{ width: '100px', height: '4px', backgroundColor: '#FFC107' }}></div>
-          <p className="lead text-muted max-w-2xl mx-auto">
+          <h2 className="display-5 fw-bold text mb-3">Successful Client Stories</h2>
+          <div className="mx-auto mb-4 bg-highlight" style={{ width: '100px', height: '4px' }}></div>
+          <p className="lead text-secondary max-w-2xl mx-auto">
             Click on a case study to read more information about the achievements and goals of the client.
           </p>
         </div>
@@ -48,10 +48,10 @@ const TrustedCustomers = () => {
                       className="object-fit-cover c-img"
                     />
                   </div>
-                  <h3 className="h4 mb-3 text-dark">{card.title}</h3>
-                  <p className="text-muted mb-4">{card.description}</p>
+                  <h3 className="h4 mb-3 text">{card.title}</h3>
+                  <p className="text-secondary mb-4">{card.description}</p>
                   <div className="">
-                  <Link href={card.link} className="btn btn-secondary d-inline mt-auto rounded-5 px-3 py-2">
+                  <Link href={card.link} className="btn btn-theme d-inline mt-auto rounded-5 px-3 py-2">
                     Read Case Study
                   </Link>
                   </div>

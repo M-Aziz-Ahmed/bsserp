@@ -4,7 +4,7 @@ const Scorecard = ({}) => {
                 <div className="row g-4 text-center">
                     {/* Client Satisfaction */}
                     <div className="col-lg-3 col-sm-6">
-                        <div className="bg-secondary text-white p-4 rounded-4 shadow-sm">
+                        <div className="bg-dark text-white p-4 rounded-4 shadow-sm">
                             <h2 className="display-4 fw-bold mb-1">100%</h2>
                             <p className="mb-0 fs-5 fw-medium">Client satisfaction</p>
                         </div>
@@ -20,7 +20,7 @@ const Scorecard = ({}) => {
 
                     {/* Countries */}
                     <div className="col-lg-3 col-sm-6">
-                        <div className="bg-secondary text-white p-4 rounded-4 shadow-sm">
+                        <div className="bg-dark text-white p-4 rounded-4 shadow-sm">
                             <h2 className="display-4 fw-bold mb-1">06+</h2>
                             <p className="mb-0 fs-5 fw-medium">Countries</p>
                         </div>

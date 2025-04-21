@@ -26,7 +26,7 @@ const ReviewsSlider = () => {
       name: "Ayman A Hadi",
       role: "Founder & Director",
       company: "Tertiq International",
-      rating: 5,
+      rating: 4,
       readMoreLink: "#"
     },
     {
@@ -54,9 +54,9 @@ const ReviewsSlider = () => {
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="display-5 fw-bold text-dark mb-3">Client Reviews</h2>
-          <div className="mx-auto mb-4" style={{ width: '100px', height: '4px', backgroundColor: '#FFC107' }}></div>
-          <p className="text-lg text-gray-600">What they say about us</p>
+          <h2 className="display-5 fw-bold text mb-3">Client Reviews</h2>
+          <div className="mx-auto mb-4 bg-highlight" style={{ width: '100px', height: '4px'}}></div>
+          <p className="text-lg text-secondary">What they say about us</p>
         </div>
 
         <Swiper
@@ -83,13 +83,13 @@ const ReviewsSlider = () => {
               <div className="bg-white p-6 rounded-lg shadow-md h-full mx-2">
                 <div className="flex items-center mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <span key={i} className={`text-${i < review.rating ? 'yellow' : 'gray'}-400 text-xl`}>★</span>
+                    <span key={i} className={`text-${i < review.rating ? 'yellow' : 'gray'} text-xl`}>★</span>
                   ))}
                 </div>
                 <p className="text-gray-600 mb-4 line-clamp-3">{review.review}</p>
                 <div className="mt-4 pt-4 border-t border-gray-100">
-                  <h4 className="font-semibold">{review.name}</h4>
-                  <p className="text-gray-500 text-sm">{review.role}, {review.company}</p>
+                  <h4 className="font-semibold text">{review.name}</h4>
+                  <p className="textsecondary text-sm">{review.role}, {review.company}</p>
                 </div>
               </div>
             </SwiperSlide>
