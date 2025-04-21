@@ -13,9 +13,10 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-.text{
+.text ,.text-theme{
   color: #573174 !important;
 }
+
 .btn-theme{
   background-color: #573174 !important;
   color: #ffffff !important;
@@ -58,6 +59,6 @@ body {
   opacity: 1;
 }
 
-.swiper-pagination-bullet-active {
-  background: #3B82F6; /* blue-500 */
+.swiper-pagination-bullet-active, .bg-theme {
+  background: #573174; /* blue-500 */
 }
