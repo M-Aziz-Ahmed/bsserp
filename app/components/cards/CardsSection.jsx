@@ -9,64 +9,64 @@ const CardsSection = () => {
         { 
             title: 'Manufacturing ERP', 
             desc: 'Comprehensive solution to manage production, inventory, and quality control for manufacturing excellence.', 
-            icon: <BiSolidFactory className="text-secondary" size={48} />, 
+            icon: <BiSolidFactory className="text" size={48} />, 
             link: '/solutions/manufacturing-erp' 
         },
         { 
             title: 'Supply Chain Management', 
             desc: 'Optimize your logistics, procurement, and distribution networks for maximum efficiency.', 
-            icon: <FaIndustry className="text-secondary" size={48} />, 
+            icon: <FaIndustry className="text" size={48} />, 
             link: '/solutions/supply-chain' 
         },
         { 
             title: 'Human Resources', 
             desc: 'Streamline payroll, attendance, and talent management with our HR modules.', 
-            icon: <FaUsers className="text-secondary" size={48} />, 
+            icon: <FaUsers className="text" size={48} />, 
             link: '/solutions/human-resources' 
         },
         { 
             title: 'Maintenance Management', 
             desc: 'Proactive equipment maintenance scheduling to minimize downtime and costs.', 
-            icon: <FaTools className="text-secondary" size={48} />, 
+            icon: <FaTools className="text" size={48} />, 
             link: '/solutions/maintenance' 
         },
         { 
             title: 'Business Intelligence', 
             desc: 'Powerful analytics and reporting tools for data-driven decision making.', 
-            icon: <FaChartLine className="text-secondary" size={48} />, 
+            icon: <FaChartLine className="text" size={48} />, 
             link: '/solutions/analytics' 
         },
         { 
             title: 'Inventory Control', 
             desc: 'Real-time inventory tracking and warehouse management solutions.', 
-            icon: <FaWarehouse className="text-secondary" size={48} />, 
+            icon: <FaWarehouse className="text" size={48} />, 
             link: '/solutions/inventory' 
         },
         { 
             title: 'Quality Assurance', 
             desc: 'Ensure product quality and compliance with industry standards.', 
-            icon: <FaShieldAlt className="text-secondary" size={48} />, 
+            icon: <FaShieldAlt className="text" size={48} />, 
             link: '/solutions/quality-assurance' 
         },
         { 
             title: 'Custom Modules', 
             desc: 'Tailored solutions designed specifically for your business requirements.', 
-            icon: <FaCogs className="text-secondary" size={48} />, 
+            icon: <FaCogs className="text" size={48} />, 
             link: '/solutions/custom-modules' 
         },
     ];
 
     return (
-        <section className="py-5 bg-secondary">
+        <section className="py-5 bg-yellow">
             <div className="container">
                 <div className="mb-5">
-                    <span className="badge bg-dark text-white px-3 py-2 mb-3 fs-6">
+                    <span className="badge bg-white fw-bold text-highlight shadow rounded-5 px-3 py-2 mb-3 fs-6">
                         Leading The Path To Innovation
                     </span>
-                    <h2 className="display-5 fw-bold text-white mb-3">
+                    <h2 className="display-5 fw-bold text mb-3">
                         Transform Your Business with BSSERP
                     </h2>
-                    <p className="lead text-light">
+                    <p className="lead textsecondary">
                         Custom ERP solutions designed for your unique business needs in Pakistan and beyond.
                     </p>
                 </div>
@@ -79,7 +79,7 @@ const CardsSection = () => {
                                     <div className="mb-4">
                                         {card.icon}
                                     </div>
-                                    <h3 className="h4 card-title mb-3">{card.title}</h3>
+                                    <h3 className="h4 text mb-3">{card.title}</h3>
                                     <p className="card-text text-muted mb-4">{card.desc}</p>
                                     <Link href={card.link} className="nav-link">
                                     <div className="mt-3 text-secondary fw-semibold">

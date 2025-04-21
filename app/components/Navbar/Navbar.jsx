@@ -3,9 +3,10 @@ import Link from "next/link"
 import { useState } from "react";
 import Image from "next/image"
 import { FaWhatsapp, FaChevronDown, FaChevronUp, FaToggleOn } from 'react-icons/fa'
-import path from "path";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+    const pathname = usePathname()
     const links = [
         { name: 'Home', path: '/', subLinks: [] },
         {
@@ -65,7 +66,7 @@ const Navbar = () => {
                                 >
                                     <div className="d-flex align-items-center">
                                         <Link
-                                            className="nav-link text-dark fw-medium px-3 py-2"
+                                            className={`nav-link fw-medium px-3 py-2 ${pathname === link.path ? 'text-highlight' : 'text-dark'}`}
                                             href={link.path}
                                         >
                                             {link.name}
@@ -84,7 +85,7 @@ const Navbar = () => {
                                             {link.subLinks.map((subLink, subIndex) => (
                                                 <Link
                                                     key={subIndex}
-                                                    className="dropdown-item d-block px-3 py-2 text-dark hover-bg-secondary hover-text-white rounded"
+                                                    className={`dropdown-item d-block px-3 py-2 rounded ${pathname === subLink.path ? 'text-highlight' : 'text-dark'}`}
                                                     href={subLink.path}
                                                 >
                                                     {subLink.name}
@@ -110,7 +111,7 @@ const Navbar = () => {
                         <a href="https://wa.me/yournumber" className="text-success">
                             <FaWhatsapp size={40} />
                         </a>
-                        <Link href="/demo" className="btn btn-secondary px-4 py-2 rounded-pill fw-medium">
+                        <Link href="/demo" className="btn btn-theme px-4 py-2 rounded-pill fw-medium">
                             Try Out
                         </Link>
                     </div>
@@ -127,7 +128,7 @@ const Navbar = () => {
                                         onClick={() => setActiveSubmenu(activeSubmenu === index ? null : index)}
                                     >
                                         <Link
-                                            className="nav-link text-dark fw-medium"
+                                            className={`nav-link fw-medium ${pathname === link.path ? 'text-highlight' : 'text-dark'}`}
                                             href={link.path}
                                         >
                                             {link.name}
@@ -144,7 +145,7 @@ const Navbar = () => {
                                             {link.subLinks.map((subLink, subIndex) => (
                                                 <Link
                                                     key={subIndex}
-                                                    className="dropdown-item d-block py-2 text-dark"
+                                                    className={`dropdown-item d-block py-2 ${pathname === subLink.path ? 'text-highlight' : 'text-dark'}`}
                                                     href={subLink.path}
                                                 >
                                                     {subLink.name}
@@ -161,7 +162,7 @@ const Navbar = () => {
                                 </a>
                             </li>
                             <li className="nav-item mt-2">
-                                <Link href="/demo" className="btn btn-secondary w-100 rounded-pill">
+                                <Link href="/demo" className="btn btn-theme w-100 rounded-pill">
                                     Try Out
                                 </Link>
                             </li>

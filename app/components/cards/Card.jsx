@@ -7,7 +7,7 @@ const Card = ({ }) => {
                         Elevate your business with SowaanERP - advanced software trusted worldwide that guides you to success
                     </h2>
                     <button
-                        className="btn btn-secondary rounded-pill px-4 fw-medium fs-6"
+                        className="btn btn-theme rounded-pill px-4 fw-medium fs-6"
                         aria-label="Request a demo of SowaanERP"
                     >
                         Request Demo

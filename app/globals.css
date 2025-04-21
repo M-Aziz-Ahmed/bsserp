@@ -13,6 +13,25 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+.text{
+  color: #573174 !important;
+}
+.btn-theme{
+  background-color: #573174 !important;
+  color: #ffffff !important;
+}
+.btn-theme:hover{
+  background-color: #cae000 !important;
+}
+.form-bg{
+  background-color: #EFF4F3 !important;
+}
+.bg-yellow{
+  background-color: #FAFCE4 !important;
+}
+.text-highlight{
+  color: #CAE000 !important;
+}
 .c-img:hover{
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
