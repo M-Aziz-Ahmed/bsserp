@@ -17,12 +17,14 @@ const Navbar = () => {
                 { name: "Distribution ERP Software", path: '/solutions/distribution-erp' }
             ]
         },
-        { name: 'Modules', path: '/modules', subLinks: [
-            { name: "Accounts", path: '' },
-            { name: "HRMS", path: '' },
-            { name: "Supply Chain Module",path:''},
-            { name: "Sales & Merchandizing",path:''}
-        ] },
+        {
+            name: 'Modules', path: '/modules', subLinks: [
+                { name: "Accounts", path: '' },
+                { name: "HRMS", path: '' },
+                { name: "Supply Chain Module", path: '' },
+                { name: "Sales & Merchandizing", path: '' }
+            ]
+        },
         { name: 'Services', path: '/services', subLinks: [] },
         {
             name: 'Resources', path: '/resources', subLinks: [
@@ -38,6 +40,11 @@ const Navbar = () => {
 
     const [activeSubmenu, setActiveSubmenu] = useState(null);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+    const handleMobileMenuToggle = () => {
+        setMobileMenuOpen(!mobileMenuOpen);
+        document.getElementById('navbar-toggler-icon').style.transform = mobileMenuOpen ? 'rotate(0deg)' : 'rotate(90deg)';
+    }
 
     return (
         <header className="sticky-top bg-light shadow-sm">
@@ -75,8 +82,8 @@ const Navbar = () => {
                                             <span className="ms-1 text-dark">
                                                 {activeSubmenu === index ? <FaChevronUp size={12} /> : <FaChevronDown size={12} />}
                                             </span>
-                                        
-                                        ):""}
+
+                                        ) : ""}
                                     </div>
 
                                     {link.subLinks.length > 0 && activeSubmenu === index && (
@@ -100,10 +107,10 @@ const Navbar = () => {
 
                     {/* Mobile Menu Button */}
                     <button
-                        className="d-lg-none border-0 d-flex align-items-center"
-                        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                        className="navbar shadow-sm p-2 d-lg-none border-0 d-flex align-items-center"
+                        onClick={handleMobileMenuToggle}
                     >
-                        <span className="navbar-toggler-icon text-secondary"><FaToggleOn size={40} /></span>
+                        <span className="navbar-toggler-icon text-secondary" id='navbar-toggler-icon'></span>
                     </button>
 
                     {/* CTA Buttons */}
