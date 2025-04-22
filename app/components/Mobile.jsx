@@ -1,7 +1,11 @@
+'use client'
 import Image from "next/image";
 import { FaCheck, FaRocket, FaBullseye, FaCogs, FaChartLine } from "react-icons/fa";
+import { useEffect, useRef, useState } from "react";
 
 const Mobile = () => {
+    const [isVisible, setIsVisible] = useState(false);
+    const sectionRef = useRef(null);
     const features = [
         {
             icon: <FaRocket className="text" />,
@@ -25,8 +29,29 @@ const Mobile = () => {
         }
     ];
 
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                }
+            },
+            { threshold: 0.1 }
+        );
+
+        if (sectionRef.current) {
+            observer.observe(sectionRef.current);
+        }
+
+        return () => {
+            if (sectionRef.current) {
+                observer.unobserve(sectionRef.current);
+            }
+        };
+    }, []);
+
     return (
-        <section className="bg-light py-5">
+        <section ref={sectionRef} className="bg-light py-5 overflow-hidden">
             <div className="container py-lg-5">
                 {/* Header Section */}
                 <div className="text-center text-md-start mb-5">
@@ -73,8 +98,9 @@ const Mobile = () => {
                     {/* Image Column */}
                     <div className="col-lg-6">
                         <div
-                            className={`position-relative rounded-4 overflow-hidden shadow-lg
-                               `}
+                            className={`position-relative rounded-4 overflow-hidden shadow-lg transition-all duration-1000 ease-out ${
+                                isVisible ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
+                            }`}
                         >
                             <Image
                                 src={'/mobile.png'}

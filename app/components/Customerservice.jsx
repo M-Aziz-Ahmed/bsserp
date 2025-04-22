@@ -1,7 +1,12 @@
+'use client'
 import { FaCheck, FaHeadset, FaGlobe, FaComments, FaHandsHelping } from "react-icons/fa";
 import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 
 const Customerservice = () => {
+    const [isVisible, setIsVisible] = useState(false);
+    const sectionRef = useRef(null);
+
     const features = [
         {
             icon: <FaHeadset className="text" />,
@@ -25,8 +30,30 @@ const Customerservice = () => {
         }
     ];
 
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                    observer.unobserve(entry.target);
+                }
+            },
+            { threshold: 0.1 }
+        );
+
+        if (sectionRef.current) {
+            observer.observe(sectionRef.current);
+        }
+
+        return () => {
+            if (sectionRef.current) {
+                observer.unobserve(sectionRef.current);
+            }
+        };
+    }, []);
+
     return (
-        <section className="bg-light py-5">
+        <section ref={sectionRef} className="bg-light py-5 overflow-hidden">
             <div className="container">
                 {/* Header Section */}
                 <div className="text-center text-md-start mb-5">
@@ -44,13 +71,14 @@ const Customerservice = () => {
 
                 {/* Main Content */}
                 <div className="row align-items-center g-5">
-                    {/* Image Column */}
+                    {/* Image Column - Slide in from left */}
                     <div className="col-lg-6">
-                        <div className="position-relative rounded-4 overflow-hidden shadow-lg">
-                            <Image 
-                                src={'/customerservice.png'} 
-                                height={600} 
-                                width={600} 
+                        <div className={`position-relative rounded-4 overflow-hidden shadow-lg transition-all duration-700 ease-out ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'
+                            }`}>
+                            <Image
+                                src={'/customerservice.png'}
+                                height={600}
+                                width={600}
                                 alt="Customer service illustration"
                                 className="img-fluid"
                                 priority
@@ -82,8 +110,9 @@ const Customerservice = () => {
                     </div>
                 </div>
 
-                {/* Additional Info Section */}
-                <div className="row justify-content-center mt-5">
+                {/* Additional Info Section - Optional fade-in */}
+                <div className={`row justify-content-center mt-5 transition-opacity duration-1000 delay-300 ${isVisible ? 'opacity-100' : 'opacity-0'
+                    }`}>
                     <div className="col-lg-8">
                         <div className="bg-white p-4 p-lg-5 rounded-4 shadow-sm">
                             <p className="lead text-center text-secondary mb-0">

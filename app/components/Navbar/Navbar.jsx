@@ -45,7 +45,6 @@ const Navbar = () => {
         setMobileMenuOpen(!mobileMenuOpen);
         document.getElementById('navbar-toggler-icon').style.transform = mobileMenuOpen ? 'rotate(0deg)' : 'rotate(90deg)';
     }
-
     return (
         <header className="sticky-top bg-light shadow-sm">
             <div className="container">
@@ -115,9 +114,12 @@ const Navbar = () => {
 
                     {/* CTA Buttons */}
                     <div className="d-none d-lg-flex align-items-center gap-3">
-                        <a href="https://wa.me/yournumber" className="text-success">
+                        <Link
+                            href="https://wa.me/yournumber"
+                            className="text-success whatsapp-icon"
+                            >
                             <FaWhatsapp size={40} />
-                        </a>
+                        </Link>
                         <Link href="/demo" className="btn btn-theme px-4 py-2 rounded-pill fw-medium">
                             Try Out
                         </Link>

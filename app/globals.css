@@ -62,3 +62,34 @@ body {
 .swiper-pagination-bullet-active, .bg-theme {
   background: #573174; /* blue-500 */
 }
+/* Hover styles */
+.custom-card:hover {
+  background: #573174 !important;
+  color: #ffffff;
+}
+
+.custom-card:hover .custom-card-content {
+  color: #ffffff;
+}
+
+.custom-card:hover .custom-card-title,
+.custom-card:hover .custom-card-desc,
+.custom-card:hover .custom-card-link {
+  color: #ffffff !important;
+}
+
+.custom-card:hover .custom-card-icon {
+  /* If you need to style the icon on hover */
+  color: #ffffff;
+  /* Or if it's an SVG, you might need: */
+  filter: brightness(0) invert(1);
+}
+/* Bouncy WhatsApp Icon Animation */
+.whatsapp-icon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-icon {
+  animation: bounce 0.8s infinite alternate ease-in-out;
+}

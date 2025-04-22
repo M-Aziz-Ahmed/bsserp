@@ -72,20 +72,20 @@ const Modules = () => {
                 <div className="row g-4">
                     {cards.map((card, index) => (
                         <div className="col-lg-3 col-md-6" key={index}>
-                            <Link href={card.link} className="text-decoration-none">
-                                <div className="card h-100 border-0 shadow-lg hover-shadow-xl transition-all bg-light hover-transform-up">
-                                    <div className="card-body text-center p-4 d-flex flex-column">
-                                        <div className="mb-4 mt-2">
-                                            {card.icon}
-                                        </div>
-                                        <h3 className="h4 mb-3 text">{card.title}</h3>
-                                        <p className="card-text text-muted mb-0 flex-grow-1">{card.desc}</p>
-                                        <div className="mt-3 text-secondary fw-semibold">
+                            <div className="rounded-5 custom-card shadow-lg h-100 border-0 bg-light">
+                                <div className="card-body text-center p-4 custom-card-content">
+                                    <div className="mb-4 custom-card-icon">
+                                        {card.icon}
+                                    </div>
+                                    <h3 className="h4 text mb-3 custom-card-title">{card.title}</h3>
+                                    <p className="card-text text-muted mb-4 custom-card-desc">{card.desc}</p>
+                                    <Link href={card.link} className="nav-link">
+                                        <div className="mt-3 text-secondary fw-semibold custom-card-link">
                                             Learn more →
                                         </div>
-                                    </div>
+                                    </Link>
                                 </div>
-                            </Link>
+                            </div>
                         </div>
                     ))}
                 </div>
