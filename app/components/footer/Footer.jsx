@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="bg-theme py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 text-white">
         {/* Our Service */}
-        <div>
+        <div className='p-2 px-3 shadow rounded-5'>
           <h3 className="text-lg font-semibold mb-4">Our service</h3>
           <div className="mb-4 bg-highlight" style={{ width: '100px', height: '4px' }}></div>
           <div className="space-y-2">
@@ -22,7 +22,7 @@ const Footer = () => {
         </div>
 
         {/* Let us help you */}
-        <div>
+        <div className='p-2 px-3 shadow rounded-5'>
           <h3 className="text-lg font-semibold mb-4">Let us help you</h3>
           <div className="mb-4 bg-highlight" style={{ width: '100px', height: '4px' }}></div>
           <div className="space-y-2">
@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
 
         {/* Countries */}
-        <div>
+        <div className='p-2 px-3 shadow rounded-5'>
           <h3 className="text-lg font-semibold mb-4">Countries</h3>
           <div className="mb-4 bg-highlight" style={{ width: '100px', height: '4px' }}></div>
           <div className="space-y-2">
@@ -128,7 +128,7 @@ const Footer = () => {
         </div>
 
         {/* Reach out to us */}
-        <div className="col-span-1 md:col-span-2">
+        <div className="col-span-1 md:col-span-2 p-2 px-3 shadow rounded-5">
           <h3 className="text-lg font-semibold mb-4">Reach out to us</h3>
           <div className="mb-4 bg-highlight" style={{ width: '100px', height: '4px' }}></div>
           <div className="space-y-2">
@@ -141,11 +141,11 @@ const Footer = () => {
         </div>
 
         {/* Mobile App */}
-        <div>
+        <div className='p-2 px-3 shadow rounded-5'>
           <h3 className="text-lg font-semibold mb-4">Mobile App</h3>
           <div className="mb-4 bg-highlight" style={{ width: '100px', height: '4px' }}></div>
 
-          <div className="my-4 d-flex gap-4 flex-column">
+          <div className="my-4 d-flex gap-4 flex-column w-75">
             <button className="btn btn-outline-light">
               Download on the App Store
             </button>
