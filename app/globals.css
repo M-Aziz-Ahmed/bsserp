@@ -33,7 +33,7 @@ body {
 .bg-highlight{
   background-color: #cae000 !important;
 }
-.text-highlight{
+.text-highlight,.nav-active{
   color: #CAE000 !important;
 }
 .c-img:hover{
@@ -92,4 +92,17 @@ body {
 
 .whatsapp-icon {
   animation: bounce 0.8s infinite alternate ease-in-out;
+}
+.nav-link-dark{
+  color: #000 !important;
+}
+.navBar:hover .nav-link-dark{
+  color: #ffffff !important;
+}
+.navBar:hover{
+  background-color: #573174 !important;
+}
+.subLink:hover{
+  background-color: #573174 !important;
+  color: #ffffff !important;
 }

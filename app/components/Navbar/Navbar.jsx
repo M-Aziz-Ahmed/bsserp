@@ -46,7 +46,7 @@ const Navbar = () => {
         document.getElementById('navbar-toggler-icon').style.transform = mobileMenuOpen ? 'rotate(0deg)' : 'rotate(90deg)';
     }
     return (
-        <header className="sticky-top bg-light shadow-sm">
+        <header className="sticky-top bg-light navBar shadow-sm">
             <div className="container">
                 <div className="d-flex align-items-center justify-content-between py-0">
                     {/* Logo */}
@@ -72,7 +72,7 @@ const Navbar = () => {
                                 >
                                     <div className="d-flex align-items-center">
                                         <Link
-                                            className={`nav-link fw-medium px-3 py-2 ${pathname === link.path ? 'text-highlight' : 'text-dark'}`}
+                                            className={`text-decoration-none fw-medium px-3 py-2 text-nowrap ${pathname === link.path ? 'nav-active' : 'nav-link-dark'}`}
                                             href={link.path}
                                         >
                                             {link.name}
@@ -91,7 +91,7 @@ const Navbar = () => {
                                             {link.subLinks.map((subLink, subIndex) => (
                                                 <Link
                                                     key={subIndex}
-                                                    className={`dropdown-item d-block px-3 py-2 rounded ${pathname === subLink.path ? 'text-highlight' : 'text-dark'}`}
+                                                    className={`dropdown-item subLink d-block px-3 py-2 rounded text-nowrap ${pathname === subLink.path ? 'text-highlight' : 'text-dark'}`}
                                                     href={subLink.path}
                                                 >
                                                     {subLink.name}
