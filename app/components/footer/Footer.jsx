@@ -145,11 +145,11 @@ const Footer = () => {
           <h3 className="text-lg font-semibold mb-4">Mobile App</h3>
           <div className="mb-4 bg-highlight" style={{ width: '100px', height: '4px' }}></div>
 
-          <div className="my-4 d-flex gap-4">
-            <button className="btn btn-outline-light text-nowrap">
+          <div className="my-4 d-flex gap-4 flex-column">
+            <button className="btn btn-outline-light">
               Download on the App Store
             </button>
-            <button className="btn btn-outline-light text-nowrap">
+            <button className="btn btn-outline-light">
               Get it on Google Play
             </button>
           </div>

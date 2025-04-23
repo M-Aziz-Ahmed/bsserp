@@ -5,7 +5,7 @@
   --foreground: #171717;
 }
 
-@theme inline {}
+/* @theme inline {} */
 
 @media (prefers-color-scheme: dark) {
 }
