@@ -134,7 +134,7 @@ const Section1 = () => {
                                                     name="message"
                                                     value={formValues.message}
                                                     onChange={handleChange}
-                                                    className="form-control border-0 border-bottom rounded-0 px-0"
+                                                    className="form-control border-0 border-bottom rounded-0"
                                                     rows={3}
                                                     placeholder=""
                                                     style={{ minHeight: "100px" }}
