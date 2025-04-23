@@ -46,9 +46,9 @@ const Footer = () => {
                 <rect width="600" height="300" fill="#245C36" />
                 <path d="M130,150h340a10,10 0 0 1 10,10v30a10,10 0 0 1-10,10H130a10,10 0 0 1-10-10v-30A10,10 0 0 1 130,150z" fill="#fff" />
                 <path d="M160,150h40v40h-40z" fill="#fff" />
-                <path d="M180,150v40" stroke="#245C36" stroke-width="10" />
-                <path d="M160,170h40" stroke="#245C36" stroke-width="10" />
-                <text x="220" y="175" font-family="Arial" font-size="20" fill="#fff" font-weight="bold">لا إله إلا الله محمد رسول الله</text>
+                <path d="M180,150v40" stroke="#245C36" strokeWidth="10" />
+                <path d="M160,170h40" stroke="#245C36" strokeWidth="10" />
+                <text x="220" y="175" fontFamily="Arial" fontSize="20" fill="#fff" fontWeight="bold">لا إله إلا الله محمد رسول الله</text>
               </svg>
             </span> Saudia Arabia</Link></div>
             <div><Link href="#" className="text-gray-600 hover:text-gray-900 nav-link d-flex align-items-center gap-3"><span>
@@ -143,12 +143,14 @@ const Footer = () => {
         {/* Mobile App */}
         <div>
           <h3 className="text-lg font-semibold mb-4">Mobile App</h3>
-          <div className="space-y-4">
-            <button className="block w-full max-w-[200px]">
-              <img src="/app-store-badge.svg" alt="Download on the App Store" className="w-full h-auto" />
+          <div className="mb-4 bg-highlight" style={{ width: '100px', height: '4px' }}></div>
+
+          <div className="my-4 d-flex gap-4">
+            <button className="btn btn-outline-light text-nowrap">
+              Download on the App Store
             </button>
-            <button className="block w-full max-w-[200px]">
-              <img src="/google-play-badge.png" alt="Get it on Google Play" className="w-full h-auto" />
+            <button className="btn btn-outline-light text-nowrap">
+              Get it on Google Play
             </button>
           </div>
         </div>

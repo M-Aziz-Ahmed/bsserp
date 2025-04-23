@@ -165,10 +165,10 @@ const Navbar = () => {
                                 </li>
                             ))}
                             <li className="nav-item mt-3">
-                                <a href="https://wa.me/yournumber" className="d-flex align-items-center gap-2 text-dark">
-                                    <FaWhatsapp size={20} className="text-success" />
+                                <Link href="https://wa.me/yournumber" className="d-flex align-items-center gap-2 text-dark nav-link">
+                                    <FaWhatsapp size={30} className="text-success whatsapp-icon" />
                                     WhatsApp
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item mt-2">
                                 <Link href="/demo" className="btn btn-theme w-100 rounded-pill">

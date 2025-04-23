@@ -44,7 +44,7 @@ const Section1 = () => {
                                 Discover the most affordable and the <span className='text-highlight fw-bold'>best ERP software in Pakistan</span>, made to improve your daily work, increase efficiency, and take your business to the next level. This user-friendly cloud-based solution is more than just an application; it's a smart assistant that fits your company's needs perfectly.
                             </p>
                             <ul className="list-unstyled">
-                                <button className="btn-theme btn rounded-5">Request Demo</button>
+                                <button className="btn-theme btn btn-lg rounded-5">Request Demo</button>
                             </ul>
                         </div>
                     </div>

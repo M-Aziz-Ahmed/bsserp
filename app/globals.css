@@ -33,7 +33,7 @@ body {
 .bg-highlight{
   background-color: #cae000 !important;
 }
-.text-highlight,.nav-active{
+.text-highlight, .nav-active{
   color: #CAE000 !important;
 }
 .c-img:hover{
@@ -99,6 +99,14 @@ body {
 .navBar:hover .nav-link-dark{
   color: #ffffff !important;
 }
+.navBar:hover .btn-theme{
+  background-color: #CAE000 !important;
+  color: #573174 !important;
+}
+.nav-link-dark:hover{
+  color: #CAE000 !important;
+}
+
 .navBar:hover{
   background-color: #573174 !important;
 }

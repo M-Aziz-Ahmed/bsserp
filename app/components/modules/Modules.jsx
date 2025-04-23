@@ -73,7 +73,7 @@ const Modules = () => {
                     {cards.map((card, index) => (
                         <div className="col-lg-3 col-md-6" key={index}>
                             <div className="rounded-5 custom-card shadow-lg h-100 border-0 bg-light">
-                                <div className="card-body text-center p-4 custom-card-content">
+                                <div className="card-body p-4 custom-card-content">
                                     <div className="mb-4 custom-card-icon">
                                         {card.icon}
                                     </div>
