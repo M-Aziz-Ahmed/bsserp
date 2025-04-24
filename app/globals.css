@@ -7,40 +7,53 @@
 
 /* @theme inline {} */
 
-@media (prefers-color-scheme: dark) {
-}
+@media (prefers-color-scheme: dark) {}
 
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-.text ,.text-theme{
+
+.text,
+.text-theme {
   color: #573174 !important;
 }
 
-.btn-theme{
+.btn-theme {
   background-color: #573174 !important;
   color: #ffffff !important;
+  transition: all 0.3s ease !important;
 }
-.btn-theme:hover{
+
+.btn-theme:hover {
   background-color: #cae000 !important;
+  color: #573174 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
 }
-.form-bg{
+
+.form-bg {
   background-color: #EFF4F3 !important;
 }
-.bg-yellow{
+
+.bg-yellow {
   background-color: #FAFCE4 !important;
 }
-.bg-highlight{
+
+.bg-highlight {
   background-color: #cae000 !important;
 }
-.text-highlight, .nav-active{
+
+.text-highlight,
+.nav-active {
   color: #CAE000 !important;
 }
-.c-img:hover{
+
+.c-img:hover {
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
   filter: brightness(0.9);
 }
+
 .swiper-button-next,
 .swiper-button-prev {
   color: #CAE000 !important;
@@ -55,27 +68,37 @@ body {
 }
 
 .swiper-pagination-bullet {
-  background: #9CA3AF; /* gray-400 */
+  background: #9CA3AF;
+  /* gray-400 */
   opacity: 1;
 }
 
-.swiper-pagination-bullet-active, .bg-theme {
-  background: #573174; /* blue-500 */
+.swiper-pagination-bullet-active,
+.bg-theme {
+  background: #573174;
+  /* blue-500 */
 }
+
 /* Hover styles */
+.custom-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 .custom-card:hover {
   background: #573174 !important;
-  color: #ffffff;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
 }
 
 .custom-card:hover .custom-card-content {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .custom-card:hover .custom-card-title,
 .custom-card:hover .custom-card-desc,
 .custom-card:hover .custom-card-link {
   color: #ffffff !important;
+  transition: color 0.8s ease !important;
 }
 
 .custom-card:hover .custom-card-icon {
@@ -84,6 +107,10 @@ body {
   /* Or if it's an SVG, you might need: */
   filter: brightness(0) invert(1);
 }
+.custom-card-link {
+  transition: color 0.8s ease !important;
+}
+
 /* Bouncy WhatsApp Icon Animation */
 .whatsapp-icon {
   display: inline-block;
@@ -93,24 +120,29 @@ body {
 .whatsapp-icon {
   animation: bounce 0.8s infinite alternate ease-in-out;
 }
-.nav-link-dark{
+
+.nav-link-dark {
   color: #000 !important;
 }
-.navBar:hover .nav-link-dark{
+
+.navBar:hover .nav-link-dark {
   color: #ffffff !important;
 }
-.navBar:hover .btn-theme{
+
+.navBar:hover .btn-theme {
   background-color: #CAE000 !important;
   color: #573174 !important;
 }
-.nav-link-dark:hover{
+
+.nav-link-dark:hover {
   color: #CAE000 !important;
 }
 
-.navBar:hover{
+.navBar:hover {
   background-color: #573174 !important;
 }
-.subLink:hover{
+
+.subLink:hover {
   background-color: #573174 !important;
   color: #ffffff !important;
 }

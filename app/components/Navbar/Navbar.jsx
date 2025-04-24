@@ -9,33 +9,42 @@ const Navbar = () => {
     const pathname = usePathname()
     const links = [
         { name: 'Home', path: '/', subLinks: [] },
-        {
-            name: 'Solutions',
-            path: '',
+        {name: 'Solutions',path: '/solutions',
             subLinks: [
                 { name: "Manufacturing ERP", path: '/solutions/manufacturing-erp' },
                 { name: "Distribution ERP Software", path: '/solutions/distribution-erp' }
             ]
         },
         {
-            name: 'Modules', path: '/modules', subLinks: [
+            name: 'Modules', path: '/modules', 
+            subLinks: [
                 { name: "Accounts", path: '' },
                 { name: "HRMS", path: '' },
                 { name: "Supply Chain Module", path: '' },
                 { name: "Sales & Merchandizing", path: '' }
             ]
         },
-        { name: 'Services', path: '/services', subLinks: [] },
+        { name: 'Services', path: '/services', 
+            subLinks: [
+
+            ] },
         {
-            name: 'Resources', path: '/resources', subLinks: [
+            name: 'Resources', path: '/resources', 
+            subLinks: [
                 { name: "Blogs", path: '/resources/blogs' },
                 { name: "Case Studies", path: '/resources/case-studies' },
                 { name: "Client Stories", path: '/resources/client-stories' },
                 { name: "Integration", path: '/resources/integration' },
             ]
         },
-        { name: 'About Us', path: '/about', subLinks: [] },
-        { name: 'Contact Us', path: '/contact', subLinks: [] },
+        { name: 'About Us', path: '/about-us', 
+            subLinks: [
+
+            ] },
+        { name: 'Contact Us', path: '/contact-us',
+             subLinks: [
+                
+             ] },
     ]
 
     const [activeSubmenu, setActiveSubmenu] = useState(null);
