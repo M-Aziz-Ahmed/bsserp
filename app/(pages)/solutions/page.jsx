@@ -23,11 +23,11 @@ const Page = ({ }) => {
         <section className="overflow-hidden">
             {/* Hero Section */}
             <div className="container-fluid px-0">
-                <div 
-                    className="text py-lg-5 py-4" 
-                    style={{ 
-                        backgroundImage: "url('/BACKGROUND-LINES.webp')", 
-                        backgroundSize: 'cover', 
+                <div
+                    className="text py-lg-5 py-4"
+                    style={{
+                        backgroundImage: "url('/BACKGROUND-LINES.webp')",
+                        backgroundSize: 'cover',
                         backgroundPosition: 'center',
                         backgroundRepeat: 'no-repeat'
                     }}
@@ -72,19 +72,19 @@ const Page = ({ }) => {
                         </div>
                     </div>
 
-                    <div className="row g-4 justify-content-center">
+                    <div className="row g-4">
                         {cards.map((card, index) => (
-                            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-10" key={index}>
-                                <div className="rounded-5 custom-card shadow-lg h-100 border-0 bg-light transition-all hover-scale">
-                                    <div className="card-body p-4 p-xl-5 d-flex flex-column">
+                            <div className="col-lg-3 col-md-6" key={index}>
+                                <div className="rounded-5 custom-card shadow-lg h-100 border-0 bg-light">
+                                    <div className="card-body p-4 custom-card-content">
                                         <div className="mb-4 custom-card-icon">
                                             {card.icon}
                                         </div>
-                                        <h3 className="h4 mb-3 custom-card-title">{card.title}</h3>
-                                        <p className="card-text text-muted mb-4 flex-grow-1">{card.desc}</p>
-                                        <Link href={card.link} className="nav-link text-decoration-none">
-                                            <div className="mt-3 text-secondary fw-semibold custom-card-link d-inline-flex align-items-center">
-                                                Learn more <span className="ms-2">→</span>
+                                        <h3 className="h4 text mb-3 custom-card-title">{card.title}</h3>
+                                        <p className="card-text text-muted mb-4 custom-card-desc">{card.desc}</p>
+                                        <Link href={card.link} className="nav-link">
+                                            <div className="mt-3 text-secondary fw-semibold custom-card-link">
+                                                Learn more →
                                             </div>
                                         </Link>
                                     </div>
@@ -94,79 +94,6 @@ const Page = ({ }) => {
                     </div>
                 </div>
             </div>
-
-            <style jsx>{`
-                .text-highlight {
-                    color: #FFD700; /* Gold/yellow color - adjust if needed */
-                    position: relative;
-                    display: inline-block;
-                }
-                
-                .text-highlight:after {
-                    content: '';
-                    position: absolute;
-                    bottom: 2px;
-                    left: 0;
-                    width: 100%;
-                    height: 8px;
-                    background-color: rgba(255, 215, 0, 0.3);
-                    z-index: -1;
-                }
-                
-                .btn-theme {
-                    background-color: #FFD700;
-                    color: #000;
-                    font-weight: 600;
-                    transition: all 0.3s ease;
-                }
-                
-                .btn-theme:hover {
-                    background-color: #FFC000;
-                    transform: translateY(-2px);
-                    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
-                }
-                
-                .bg-yellow {
-                    background-color: rgba(255, 215, 0, 0.1);
-                }
-                
-                .custom-card {
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                }
-                
-                .hover-scale:hover {
-                    transform: translateY(-5px);
-                }
-                
-                .custom-card-link {
-                    transition: color 0.3s ease;
-                }
-                
-                .custom-card-link:hover {
-                    color: #FFD700 !important;
-                }
-                
-                @media (max-width: 768px) {
-                    .display-4 {
-                        font-size: 2.5rem;
-                    }
-                    
-                    .fs-4 {
-                        font-size: 1.1rem !important;
-                    }
-                }
-                
-                @media (max-width: 576px) {
-                    .display-4 {
-                        font-size: 2rem;
-                    }
-                    
-                    .btn-lg {
-                        padding: 0.5rem 1.5rem;
-                        font-size: 1rem;
-                    }
-                }
-            `}</style>
         </section>
     );
 }
