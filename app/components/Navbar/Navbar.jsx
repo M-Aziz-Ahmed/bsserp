@@ -18,10 +18,38 @@ const Navbar = () => {
         {
             name: 'Modules', path: '/modules', 
             subLinks: [
-                { name: "Accounts", path: '' },
-                { name: "HRMS", path: '' },
-                { name: "Supply Chain Module", path: '' },
-                { name: "Sales & Merchandizing", path: '' }
+                        {
+                            name: 'Accounts',
+                            path: '/modules/accounts',
+                        },
+                        {
+                            name: 'Human Resource',
+                            path: '/modules/human-resource'
+                        },
+                        {
+                            name: 'Supply Chain Module',
+                            path: '/modules/supply-chain'
+                        },
+                        {
+                            name: 'Sales & Merchandizing',
+                            path: '/modules/sales-merchandizing'
+                        },
+                        {
+                            name: 'Work in Progress',
+                            path: '/modules/wip'
+                        },
+                        {
+                            name: 'Production',
+                            path: '/modules/production'
+                        },
+                        {
+                            name: 'Dashboard',
+                            path: '/modules/dashboard'
+                        },
+                        {
+                            name: 'Support',
+                            path: '/modules/support'
+                        },
             ]
         },
         { name: 'Services', path: '/services', 

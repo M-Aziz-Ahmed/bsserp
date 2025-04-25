@@ -6,22 +6,59 @@ import Link from 'next/link';
 const Page = ({ }) => {
     const cards = [
         {
+            id: 'accounts',
             title: 'Accounts',
-            desc: 'Biz Soft ERP Accounts Module in an integrated system designed to manage all financial transactions of an organization in a centralized and integrated way. It helps ensure accurate financial records, transparency, compliance, and efficient decision-making.',
-            icon: '',
-            link: '/solutions/manufacturing-erp'
+            desc: 'Biz Soft ERP Accounts Module...',
+            icon: <BiCalculator size={32} />,
+            link: `/modules/accounts`,
         },
         {
-            title: 'Humen Resource',
-            desc: 'The Biz Soft ERP HR module in an integrated system is designed to manage the entire employee lifecycle and streamline HR-related tasks. It helps organizations. Automate and centralize HR processes. Improve employee data management. Ensure compliance with labor laws and company policies. Increase overall efficiency and reduce paperwork.',
-            icon: '',
-            link: '/solutions/supply-chain'
+            id: 'human-resource',
+            title: 'Human Resource',
+            desc: 'The Biz Soft ERP HR module...',
+            icon: <FaUsers size={32} />,
+            link: '/modules/human-resource'
         },
         {
+            id: 'supply-chain',
             title: 'Supply Chain Module',
-            desc: 'The Biz Soft ERP Supply Chain module is an integrated system to streamline, automate, and optimize all processes involved in the supply chain from procurement of raw materials to product delivery. Its main goal is to ensure smooth coordination between supply, production, inventory, and distribution to minimize costs and maximize efficiency.',
-            icon: '',
-            link: '/solutions/supply-chain'
+            desc: 'The Biz Soft ERP Supply Chain module...',
+            icon: <FaWarehouse size={32} />,
+            link: '/modules/supply-chain'
+        },
+        {
+            id: 'sales-merchandizing',
+            title: 'Sales & Merchandizing',
+            desc: 'The Biz Soft ERP Sales & Merchandizing module...',
+            icon: <FaWarehouse size={32} />,
+            link: '/modules/sales-merchandizing'
+        },
+        {
+            id: 'wip',
+            title: 'Work in Progress',
+            desc: 'The Work in Progress Module...',
+            icon: <FaWarehouse size={32} />,
+            link: '/modules/wip'
+        },
+        {
+            id: 'production',
+            title: 'Production',
+            desc: 'The Production Module...',
+            icon: <FaWarehouse size={32} />,
+            link: '/modules/production'
+        },
+        {
+            id: 'dashboard',
+            title: 'Dashboard',
+            desc: 'Biz Soft ERP Dashboard Module...',
+            icon: <FaWarehouse size={32} />,
+            link: '/modules/dashboard'
+        },
+        {
+            title: 'Support',
+            desc: '24/7 technical support',
+            icon: <BiSupport className="text" size={50} />,
+            link: '/modules/support'
         },
     ];
 
@@ -38,26 +75,7 @@ const Page = ({ }) => {
                         backgroundRepeat: 'no-repeat'
                     }}
                 >
-                    <div className="container">
-                        <div className="row justify-content-center">
-                            <div className="col-xxl-8 col-lg-10 col-md-12 text-center py-4 py-lg-5">
-                                <h1 className="display-4 fw-bolder mb-4">
-                                    Transforming best
-                                    <span className="text-highlight"> Quality Control </span>
-                                    with <span className="text-highlight"> Manufacturing </span>
-                                    ERP software in Pakistan
-                                </h1>
-                                <p className="text-secondary fs-4 mb-5">
-                                    SowaanERP offers a cutting-edge cloud-based <span className="text-highlight fw-bold"> manufacturing ERP software in Pakistan </span>. It streamlines production processes, accurately monitors material use, ensures effective capacity planning, manages subcontracting efficiently, and much more. This software is designed to enhance your business operations significantly!
-                                </p>
-                                <div className="d-flex justify-content-center">
-                                    <button className="btn btn-theme btn-lg rounded-5 px-4 py-3 fs-5 fw-semibold">
-                                        Request a Demo
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    {/* ... rest of your hero section ... */}
                 </div>
             </div>
 
@@ -66,10 +84,10 @@ const Page = ({ }) => {
                 <div className="container py-5 my-md-5">
                     <div className="row justify-content-center">
                         <div className="col-xl-8 col-lg-10 text-center mb-5">
-                            <span className="badge bg-white shadow text-dark rounded-5 px-3 py-2 mb-3 fs-6 fw-semibold">
-                                Solutions
+                            <span className="badge bg-white shadow text rounded-5 px-3 py-2 mb-3 fs-6 fw-semibold">
+                                Modules
                             </span>
-                            <h2 className="display-5 fw-bold mb-3">
+                            <h2 className="display-5 fw-bold mb-3 text">
                                 Everything Your Business Needs
                             </h2>
                             <p className="lead text-secondary mb-0 px-lg-5">
@@ -83,16 +101,16 @@ const Page = ({ }) => {
                             <div className="col-lg-3 col-md-6" key={index}>
                                 <div className="rounded-5 custom-card shadow-lg h-100 border-0 bg-light">
                                     <div className="card-body p-4 custom-card-content">
-                                        <div className="mb-4 custom-card-icon">
+                                        <div className="mb-4 custom-card-icon text">
                                             {card.icon}
                                         </div>
                                         <h3 className="h4 text mb-3 custom-card-title">{card.title}</h3>
-                                        <p className="card-text text-muted mb-4 custom-card-desc">{card.desc}</p>
-                                        {/* <Link href={card.link} className="nav-link">
+                                        <p className="card-text text-muted mb-4 custom-card-desc">{card.desc.substring(0, 100)}...</p>
+                                        <Link href={card.link} className="nav-link">
                                             <div className="mt-3 text-secondary fw-semibold custom-card-link">
                                                 Learn more →
                                             </div>
-                                        </Link> */}
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
