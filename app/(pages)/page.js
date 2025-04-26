@@ -22,7 +22,7 @@ export default function Home() {
     <Scorecard />
     <Mobile/>
     <Customerservice/>
-    {/* <Partners/> */}
+    <Partners/>
     <ClientStories/>
     <ReviewCard />
     </>

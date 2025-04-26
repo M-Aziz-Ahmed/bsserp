@@ -7,20 +7,10 @@ const Partners = () => {
   const sectionRef = useRef(null);
   
   const partnerGroups = [
-    { name: 'google', logo: 'https://logo.clearbit.com/google.com' },
-    { name: 'microsoft', logo: 'https://logo.clearbit.com/microsoft.com' },
-    { name: 'amazon', logo: 'https://logo.clearbit.com/amazon.com' },
-    { name: 'facebook', logo: 'https://logo.clearbit.com/facebook.com' },
-    { name: 'twitter', logo: 'https://logo.clearbit.com/twitter.com' },
-    { name: 'tesla', logo: 'https://logo.clearbit.com/tesla.com' },
-    { name: 'toyota', logo: 'https://logo.clearbit.com/toyota.com' },
-    { name: 'ford', logo: 'https://logo.clearbit.com/ford.com' },
-    { name: 'walmart', logo: 'https://logo.clearbit.com/walmart.com' },
-    { name: 'target', logo: 'https://logo.clearbit.com/target.com' },
-    { name: 'visa', logo: 'https://logo.clearbit.com/visa.com' },
-    { name: 'paypal', logo: 'https://logo.clearbit.com/paypal.com' },
-    { name: 'starbucks', logo: 'https://logo.clearbit.com/starbucks.com' },
-    { name: 'mcdonalds', logo: 'https://logo.clearbit.com/mcdonalds.com' },
+    { name: 'microsoft', logo: '/Lahore-Apparel.png' },
+    { name: 'microsoft', logo: '/Lazienda.png' },
+    { name: 'microsoft', logo: '/SNS.png' },
+    { name: 'microsoft', logo: '/Royal.png' },
   ];
 
   useEffect(() => {
