@@ -31,6 +31,36 @@ const Section1 = () => {
         console.log(formValues);
     };
 
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        
+        // Ensure all required fields exist
+        if (!formValues.userName || !formValues.email /* ... */) {
+          alert("Please fill all fields");
+          return;
+        }
+      
+        try {
+          const response = await fetch('http://localhost:8000/api/contact/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              user_name: formValues.userName,  // Map frontend names to backend
+              email: formValues.email,
+              phone_number: formValues.phoneNumber,
+              services: formValues.services,
+              message: formValues.message
+            }),
+          });
+      
+          if (!response.ok) throw new Error(await response.text());
+          alert("Submitted successfully!");
+        } catch (error) {
+          console.error("Submission error:", error);
+          alert("Failed to submit: " + error.message);
+        }
+      };
+
     return (
         <section className="py-5">
             <div className="container my-5">
@@ -149,6 +179,7 @@ const Section1 = () => {
                                             <button
                                                 type="submit"
                                                 className="btn btn-theme w-100 py-3 fw-bold rounded-0"
+                                                onClick={handleSubmit}
                                             >
                                                 Request Demo
                                             </button>
