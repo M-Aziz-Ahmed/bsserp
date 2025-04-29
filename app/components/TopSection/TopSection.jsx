@@ -72,13 +72,18 @@ const Section1 = () => {
 
                 })
                 .catch((err) => {
-                    alert(err);
+                    setLoader(false);
+                    setAlert({
+                        message: `Submission error: ${err}`,
+                        status: true,
+                        type: "danger"
+                    });
                 });
 
         } catch (error) {
-            console.error("Submission error:", error);
+            setLoader(false);
             setAlert({
-                message: "An error occurred while sending the email",
+                message: `Submission error:, ${error}`,
                 status: true,
                 type: "danger"
             });
