@@ -15,7 +15,6 @@ const Page = () => {
                 }
                 const data = await response.json();
                 setContacts(data.results || []);
-                console.log(data);
             } catch (error) {
                 console.error('Error fetching contacts:', error);
                 setError('Failed to load contacts. Please try again later.');
@@ -26,6 +25,20 @@ const Page = () => {
 
         fetchContacts();
     }, []);
+
+    if (loading) return (
+        <div className="d-flex justify-content-center my-5">
+            <div className="spinner-border text" role="status">
+                <span className="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    );
+
+    if (error) return <div className="alert alert-danger">{error}</div>;
+
+    if (!loading && contacts.length === 0) {
+        return <div className="alert alert-info">No contact requests found</div>;
+    }
 
     return (
         <div className="container mt-5">
