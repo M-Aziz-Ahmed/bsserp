@@ -75,7 +75,7 @@ body {
 
 .swiper-pagination-bullet-active,
 .bg-theme {
-  background: #573174;
+  background: #573174 !important;
   /* blue-500 */
 }
 
