@@ -49,31 +49,31 @@ const Section1 = () => {
 
     const validateForm = () => {
         const newErrors = {};
-        
+
         if (!formValues.userName.trim()) {
             newErrors.userName = "Full name is required";
         }
-        
+
         if (!formValues.email.trim()) {
             newErrors.email = "Email is required";
         } else if (!validateEmail(formValues.email)) {
             newErrors.email = "Please enter a valid email address";
         }
-        
+
         if (!formValues.phoneNumber) {
             newErrors.phoneNumber = "Phone number is required";
         } else if (formValues.phoneNumber.length < 5) {
             newErrors.phoneNumber = "Please enter a valid phone number";
         }
-        
+
         if (!formValues.services) {
             newErrors.services = "Please select a service";
         }
-        
+
         if (!formValues.message.trim()) {
             newErrors.message = "Please tell us about your requirements";
         }
-        
+
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
     };
@@ -84,7 +84,7 @@ const Section1 = () => {
             ...prev,
             [name]: value
         }));
-        
+
         // Clear error when user types
         if (errors[name]) {
             setErrors(prev => ({ ...prev, [name]: '' }));
@@ -96,7 +96,7 @@ const Section1 = () => {
             ...prev,
             phoneNumber: value
         }));
-        
+
         if (errors.phoneNumber) {
             setErrors(prev => ({ ...prev, phoneNumber: '' }));
         }
@@ -165,14 +165,14 @@ const Section1 = () => {
         <section className="py-5">
             {alert.show && (
                 <div className="container mb-4">
-                    <div 
+                    <div
                         className={`alert ${alert.type === 'success' ? 'bg-theme text-light' : 'alert-danger'} alert-dismissible fade show`}
                         role="alert"
                     >
                         {alert.message}
-                        <button 
-                            type="button" 
-                            className={`btn-close`} 
+                        <button
+                            type="button"
+                            className={`btn-close`}
                             onClick={() => setAlert({ ...alert, show: false })}
                             aria-label="Close"
                         />
@@ -187,15 +187,15 @@ const Section1 = () => {
                             <h1 className="display-5 fw-bold mb-4 text">
                                 Best ERP software in <span className="text-highlight">Pakistan</span> for <span className="text-highlight">Enterprises</span> & SMBs
                             </h1>
-                            <p className="lead text-muted mb-4">
+                            <p className="lead text-secondary mb-4">
                                 Discover the most affordable and the <span className='text-highlight fw-bold'>best ERP software in Pakistan</span>, made to improve your daily work, increase efficiency, and take your business to the next level.
                             </p>
-                            <button className="btn btn-theme btn-lg rounded-pill">Request Demo</button>
+                            <button className="btn btn-theme btn-lg rounded-5">Request Demo</button>
                         </div>
                     </div>
 
                     <div className="col-lg-5 right-content">
-                        <div className="shadow-lg border-0" style={{backgroundColor: "#EFF4F3"}}>
+                        <div className="shadow-lg border-0" style={{ backgroundColor: "#EFF4F3" }}>
                             <div className=" p-4">
                                 <h3 className="card-title text-center mb-4">Request personalized demo</h3>
                                 <form onSubmit={handleSubmit} noValidate>
@@ -246,15 +246,23 @@ const Section1 = () => {
 
                                         {/* Phone */}
                                         <div className="col-md-6">
-                                            <div className="form-floating">
+                                            <div className="form-floating mb-3">
                                                 <PhoneInput
                                                     international
                                                     defaultCountry={countryCode}
                                                     value={formValues.phoneNumber}
                                                     onChange={handlePhoneChange}
                                                     className={`form-control ${errors.phoneNumber ? 'is-invalid' : ''}`}
-                                                    placeholder="Phone Number"
+                                                    placeholder=" "
+                                                    style={{
+                                                        height: 'calc(3.5rem + 2px)',
+                                                        lineHeight: 2.25,
+                                                        padding: '5%',
+                                                    }}
                                                 />
+                                                <label htmlFor="phone-input" className="text-muted">
+                                                    
+                                                </label>
                                                 {errors.phoneNumber && (
                                                     <div className="invalid-feedback d-block">
                                                         {errors.phoneNumber}
