@@ -1,4 +1,4 @@
-const Card = ({ }) => {
+const Card = ({setModel }) => {
     return (
         <div className="container my-5">
             <div className="d-flex justify-content-center">
@@ -9,6 +9,7 @@ const Card = ({ }) => {
                     <button
                         className="btn btn-theme btn-lg rounded-pill px-4 fw-medium fs-6"
                         aria-label="Request a demo of SowaanERP"
+                        onClick={()=>{setModel(true)}}
                     >
                         Request Demo
                     </button>

@@ -1,6 +1,5 @@
 'use client'
 import Section1 from "../../components/TopSection/TopSection";
-import Image from "next/image";
 import React from "react";
 import Card from "../../components/cards/Card";
 import Modules from "../../components/modules/Modules";
@@ -10,22 +9,28 @@ import Customerservice from "../../components/Customerservice";
 import Partners from "../../components/partners";
 import ClientStories from "../../components/ClientStories";
 import ReviewCard from "../../components/ReviewCard";
-import States from '@/stateManager/states';
-import Alert from "../../components/Alert";
+import Model from "@/components/Model";
+import { useState } from "react";
+
 
 
 export default function Home() {
-  const { alert, setAlert } = States();
+   const [model, setModel] = useState(false);
+   const[alert, setAlert] = useState({
+    show: false,
+    type: 'success',
+    message: ''
+});
   return (
     <>
-    <Alert  alert={alert} setAlert = {setAlert}/>
-    <Section1 alert={alert} setAlert = {setAlert}/>
+    {model && <Model setModel={setModel} setAlert = {setAlert} alert = {alert} />}
+    <Section1 setModel={setModel} setAlert = {setAlert} alert = {alert}/>
     {/* <CardsSection /> */}
-    <Card />
+    <Card  setModel={setModel}/>
     <Modules />
     <Scorecard />
-    <Mobile/>
-    <Customerservice/>
+    <Mobile setModel={setModel}/>
+    <Customerservice setModel={setModel}/>
     <Partners/>
     <ClientStories/>
     <ReviewCard />

@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react';
 import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
 const Form = ({alert, setAlert}) => {
-   
     const [formValues, setFormValues] = useState({
         userName: "",
         email: "",
@@ -27,6 +26,7 @@ const Form = ({alert, setAlert}) => {
         "Content Writing",
         "Graphic Designing",
     ];
+
 
     useEffect(() => {
         // Auto-detect user's country
@@ -105,12 +105,12 @@ const Form = ({alert, setAlert}) => {
 
         if (!validateForm()) {
             setLoader(false);
-            console.log('I was Clicked')
-           setAlert({
-                message: "Please fix the errors in the form",
+            setAlert({
+                message: "Please fill in all required fields correctly.",
                 show: true,
                 type: "error"
             });
+            console.log(alert)
             return;
         }
 

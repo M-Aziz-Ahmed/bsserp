@@ -4,7 +4,8 @@ import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/footer/Footer";
-import Alert from "../../components/Alert";
+import Model from "@/components/Model";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,9 +28,9 @@ export default function RootLayout({ children }) {
       <body
         className={`bg-white antialiased`}
       >
-        <Navbar />
-        {children}
-        <Footer />
+          <Navbar />
+          {children}
+          <Footer />
       </body>
     </html>
   );

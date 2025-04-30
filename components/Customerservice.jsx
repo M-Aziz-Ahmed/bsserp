@@ -3,7 +3,7 @@ import { FaCheck, FaHeadset, FaGlobe, FaComments, FaHandsHelping } from "react-i
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
-const Customerservice = () => {
+const Customerservice = ({setModel}) => {
     const [isVisible, setIsVisible] = useState(false);
     const sectionRef = useRef(null);
 
@@ -103,7 +103,7 @@ const Customerservice = () => {
                         </div>
 
                         <div className="mt-5">
-                            <button className="btn btn-theme btn-lg rounded-pill px-4 py-2 fw-bold">
+                            <button className="btn btn-theme btn-lg rounded-pill px-4 py-2 fw-bold"onClick={()=>{setModel(true)}}>
                                 Request Demo
                             </button>
                         </div>

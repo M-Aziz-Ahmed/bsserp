@@ -1,8 +1,8 @@
 // components/Alert.js
 'use client';
-
-
-const Alert = ({alert, setAlert}) => {
+import { useAlertState } from "./Form";
+const Alert = () => {
+    // const { alert, setAlert } = useAlertState();
     
     return (
         <>

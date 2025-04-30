@@ -3,7 +3,7 @@ import Image from "next/image";
 import { FaCheck, FaRocket, FaBullseye, FaCogs, FaChartLine } from "react-icons/fa";
 import { useEffect, useRef, useState } from "react";
 
-const Mobile = () => {
+const Mobile = ({setModel}) => {
     const [isVisible, setIsVisible] = useState(false);
     const sectionRef = useRef(null);
     const features = [
@@ -89,7 +89,7 @@ const Mobile = () => {
 
                         {/* CTA Button */}
                         <div className="mt-5">
-                            <button className="btn btn-theme btn-lg rounded-pill px-4 py-2 fw-bold">
+                            <button className="btn btn-theme btn-lg rounded-pill px-4 py-2 fw-bold"onClick={()=>{setModel(true)}}>
                                 Get Started Today
                             </button>
                         </div>
