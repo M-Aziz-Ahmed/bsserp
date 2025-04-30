@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
 
         {/* Countries */}
-        <div className='p-2 px-3 shadow rounded-5'>
+        {/* <div className='p-2 px-3 shadow rounded-5'>
           <h3 className="text-lg font-semibold mb-4">Countries</h3>
           <div className="mb-4 bg-highlight" style={{ width: '100px', height: '4px' }}></div>
           <div className="space-y-2">
@@ -125,7 +125,7 @@ const Footer = () => {
                   </svg>
                 </span> Qatar</Link></div>
           </div>
-        </div>
+        </div> */}
 
         {/* Reach out to us */}
         <div className="col-span-1 md:col-span-2 p-2 px-3 shadow rounded-5">
@@ -146,12 +146,7 @@ const Footer = () => {
           <div className="mb-4 bg-highlight" style={{ width: '100px', height: '4px' }}></div>
 
           <div className="my-4 d-flex gap-4 flex-column w-75">
-            <button className="btn btn-outline-light">
-              Download on the App Store
-            </button>
-            <button className="btn btn-outline-light">
-              Get it on Google Play
-            </button>
+              * Comming Soon *
           </div>
         </div>
       </div>
