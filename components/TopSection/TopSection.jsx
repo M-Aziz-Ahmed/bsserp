@@ -4,7 +4,7 @@ import Form from "../Form";
 
 const Section1 = ({setModel, alert, setAlert}) => {
     return (
-        <section className="py-5">
+        <section className="py-5 bg-light">
             {alert.show && (
                 <div className="container mb-4">
                     <div
@@ -26,10 +26,10 @@ const Section1 = ({setModel, alert, setAlert}) => {
                     <div className="col-lg-7 left-content">
                         <div className="pe-lg-5">
                             <h1 className="display-5 fw-bold mb-4 text">
-                                Best ERP software in <span className="text-highlight">Pakistan</span> for <span className="text-highlight">Enterprises</span> & SMBs
+                                Best ERP software <span className="text-highlight"></span> for <span className="text-highlight">Enterprises</span> & SMBs
                             </h1>
                             <p className="lead text-secondary mb-4">
-                                Discover the most affordable and the <span className='text-highlight fw-bold'>best ERP software in Pakistan</span>, made to improve your daily work, increase efficiency, and take your business to the next level.
+                                Discover the most affordable and the <span className='text-highlight fw-bold'>best ERP software</span>, made to improve your daily work, increase efficiency, and take your business to the next level.
                             </p>
                             <button className="btn btn-theme btn-lg rounded-5" onClick={()=>{setModel(true)}}>Request Demo</button>
                         </div>

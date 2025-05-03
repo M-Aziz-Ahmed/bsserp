@@ -159,7 +159,7 @@ const Form = ({alert, setAlert}) => {
     };
     return (
         <>
-            <div className="shadow-lg border-0" style={{ backgroundColor: "#EFF4F3" }}>
+            <div className="shadow-lg border-0 rounded-4" style={{ backgroundColor: "#EFF4F3" }}>
                 <div className=" p-4">
                     <h3 className="card-title text-center mb-4">Request personalized demo</h3>
                     <form onSubmit={handleSubmit} noValidate>
@@ -287,7 +287,7 @@ const Form = ({alert, setAlert}) => {
                             <div className="col-12 mt-4">
                                 <button
                                     type="submit"
-                                    className="btn btn-theme rounded-0 w-100 py-3 fw-bold"
+                                    className="btn btn-theme rounded-1 w-100 py-3 fw-bold"
                                     disabled={loader}
                                 >
                                     {loader ? (

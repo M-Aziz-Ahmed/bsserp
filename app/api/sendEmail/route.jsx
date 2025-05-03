@@ -40,7 +40,7 @@ export async function POST(request) {
         from: process.env.MY_EMAIL,
         to: email,
         subject: 'Thank you for contacting us',
-        text: `Dear ${userName},\n\nWe've received your message and will get back to you soon.\n\nBest regards,\nYour Team`,
+        text: `Dear ${userName},\n\nWe've received your message and will get back to you soon.\n\nBest regards,\nBiz Soft Solutions`,
       });
 
   try {
