@@ -69,21 +69,22 @@ const Modules = () => {
                     </p>
                 </div>
 
-                <div className="row g-4">
+                <div className="d-flex flex-wrap gap-5">
                     {cards.map((card, index) => (
-                        <div className="col-lg-3 col-md-6" key={index}>
-                            <div className="rounded-5 custom-card shadow-lg h-100 border-0 bg-light">
-                                <div className="card-body p-4 custom-card-content">
-                                    <div className="mb-4 custom-card-icon">
-                                        {card.icon}
-                                    </div>
-                                    <h3 className="h4 text mb-3 custom-card-title">{card.title}</h3>
-                                    <p className="card-text text-muted mb-4 custom-card-desc">{card.desc}</p>
-                                    <Link href={card.link} className="nav-link">
-                                        <div className="mt-3 text-secondary fw-semibold custom-card-link">
-                                            Learn more →
-                                        </div>
-                                    </Link>
+                        <div className="group relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10 text-[#573174] hover:text-white" key={card.title}>
+                            <span className="absolute top-10 z-0 h-20 w-20 rounded-full bg-[#573174] transition-all duration-300 group-hover:scale-[10]"></span>
+                            <div className="relative z-10 mx-auto max-w-md">
+                                <span className="grid h-20 w-20 place-items-center rounded-full bg-[#FEF1F2] group-hover:bg-white transition-all duration-300 border-[1px] border-[#573174]">
+                                    {card.icon}
+                                </span>
+
+                                <div className="h4 my-3">
+                                    {card.title}
+                                </div>
+                                <div className=" text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90">
+                                    <p>
+                                        {card.desc}
+                                    </p>
                                 </div>
                             </div>
                         </div>
