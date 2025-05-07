@@ -4,21 +4,21 @@ import Link from "next/link";
 const TrustedCustomers = () => {
   const cards = [
     {
-      img: '/nida.png', 
-      title: 'Nida Pakistan', 
-      description: 'NIDA Pakistan (National Integrated Development Association) is a dedicated non-governmental organization (NGO) that began in 1998.', 
+      img: '/Lazienda.jpg', 
+      title: 'Lazienda Denim (Pvt) Ltd.', 
+      description: 'Lazienda Denim (Pvt) Ltd. is fastest growing manufacturers/Exporters in textile industry, producing Woven bottoms, basic pants, chinos, basic five pocket jeans for all the leading global brands', 
       link: ''
     },
     {
-      img: '/jadeed.png', 
-      title: 'Jadeed Group', 
-      description: 'Jadeed Group of Companies stands as a dominant force in Pakistan\'s poultry industry, focusing on importing and breeding top-quality grandparent poultry stock.', 
+      img: '/LA.jpg', 
+      title: 'Lahore Apparel (Pvt.) Ltd.', 
+      description: 'Lahore Apparel has collaborated with a diverse range of global brands, maintaining a 100% client satisfaction rate. Their bespoke manufacturing process, which includes pre-production consultations, pattern development, fabric sourcing, sampling, bulk manufacturing, and rigorous quality checks, ensures that each clients unique requirements are met with precision and excellence.', 
       link: ''
     },
     {
-      img: '/hira.png', 
-      title: 'Hira Papers', 
-      description: 'Hira Papers, a leading paper manufacturer specializing in various cardboard paper types, has established itself as a key player in the paper industry of Pakistan.', 
+      img: '/rt.jpg', 
+      title: 'Royal Tag', 
+      description: 'Royal Tag is a smart formal fashion retail brand for men, committed to producing quality products and delivering consistent customer care, with the goal of achieving long-lasting success in the market. Royal Tag is continually working to strengthen its relationship with valued customers by offering contemporary products and ensuring the highest quality.', 
       link: ''
     },
   ];

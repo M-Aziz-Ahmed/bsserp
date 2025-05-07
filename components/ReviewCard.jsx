@@ -13,25 +13,25 @@ const ReviewsSlider = () => {
   const reviews = [
     {
       id: 1,
-      review: "The modern SowanERP system has proven to be a valuable core business application that integrates effectively with a variety of third-party apps.",
-      name: "Osama Ali Niaz",
-      role: "GM",
-      company: "Shining Horizon Trading CO",
+      review: "The modern BSSERP system has proven to be a valuable core business application that integrates effectively with a variety of third-party apps.",
+      name: "Zaka Ul Haq",
+      role: "CEO",
+      company: "Lahore Apparel",
       rating: 5,
       readMoreLink: "#"
     },
     {
       id: 2,
-      review: "Working with SowanERP has been a great experience for us. The SowanERP cloud-based system may be tailored to our individual needs...",
-      name: "Ayman A Hadi",
-      role: "Founder & Director",
-      company: "Tertiq International",
+      review: "Working with BSSERP has been a great experience for us. The BSSERP cloud-based system may be tailored to our individual needs...",
+      name: "AQEEL RANA",
+      role: "Director",
+      company: "Lazienda Denim (Pvt) Ltd",
       rating: 4,
       readMoreLink: "#"
     },
     {
       id: 3,
-      review: "SowanERP as an ERP solution, is ideal for the type of business where we can minimize the complexity of procedures, hazards, and expenses...",
+      review: "BSSERP as an ERP solution, is ideal for the type of business where we can minimize the complexity of procedures, hazards, and expenses...",
       name: "Ammer Abu Obead",
       role: "CEO",
       company: "AI-Hussein SC (InNel)",
