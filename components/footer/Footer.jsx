@@ -51,7 +51,7 @@ const Footer = () => {
           <div className="space-y-2">
             <div><Link href="mailto:info@bizsoftsolution.net" className="text-gray-600 hover:text-gray-900 nav-link">info@bizsoftsolution.net</Link></div>
             <div className="text-light">+92 300 4919926</div>
-            <div className="text-light">$01/802 Mehdi Tower, Shahrah-e Faisal, Kanechi City, Sindh, Pakistan</div>
+            <div className="text-light">A1, 409, A1 Haider Rd, Township, Lahore, 54000</div>
           </div>
         </div>
 
