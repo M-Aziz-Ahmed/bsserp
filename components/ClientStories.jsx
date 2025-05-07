@@ -39,7 +39,7 @@ const TrustedCustomers = () => {
             <div className="col-lg-4 col-md-6" key={card.title}>
               <div className="h-100 border-0 hover-shadow transition-all">
                 <div className="d-flex flex-column gap-1">
-                  <div className="mb-4 overflow-hidden" style={{}}>
+                  <div className="mb-4 overflow-hidden" style={{ height:'270px !important'}}>
                     <Image 
                       src={card.img} 
                       width={400} 

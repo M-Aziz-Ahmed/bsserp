@@ -35,11 +35,11 @@ const Footer = () => {
           <div className="mb-4 bg-highlight" style={{ width: '100px', height: '4px' }}></div>
           <div className="space-y-2">
             <div><Link href="/about-us" className="text-gray-600 hover:text-gray-900 nav-link">About</Link></div>
-            <div><Link href="/case-studies" className="text-gray-600 hover:text-gray-900 nav-link">Case Studies</Link></div>
-            <div><Link href="/clients" className="text-gray-600 hover:text-gray-900 nav-link">Clients Stories</Link></div>
+            <div><Link href="/" className="text-gray-600 hover:text-gray-900 nav-link">Case Studies</Link></div>
+            <div><Link href="/" className="text-gray-600 hover:text-gray-900 nav-link">Clients Stories</Link></div>
             <div><Link href="/services" className="text-gray-600 hover:text-gray-900 nav-link">Services</Link></div>
             <div><Link href="/privacy" className="text-gray-600 hover:text-gray-900 nav-link">Privacy Policy</Link></div>
-            <div><Link href="/contact" className="text-gray-600 hover:text-gray-900 nav-link">Contact Us</Link></div>
+            <div><Link href="/contact-us" className="text-gray-600 hover:text-gray-900 nav-link">Contact Us</Link></div>
           </div>
         </div>
 
