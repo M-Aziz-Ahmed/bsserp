@@ -50,11 +50,7 @@ const TrustedCustomers = () => {
                   </div>
                   <h3 className="h4 mb-3 text">{card.title}</h3>
                   <p className="text-secondary mb-4">{card.description}</p>
-                  {/* <div className="">
-                  <Link href={card.link} className="btn btn-theme btn-lg d-inline mt-auto rounded-5 px-3 py-2">
-                    Read Case Study
-                  </Link>
-                  </div> */}
+                  {/* */}
                 </div>
               </div>
             </div>

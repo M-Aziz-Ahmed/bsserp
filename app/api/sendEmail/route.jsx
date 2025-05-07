@@ -16,6 +16,7 @@ export async function POST(request) {
   const mailToUs = {
     from: process.env.MY_EMAIL,
     to: process.env.MY_EMAIL,
+    cc:'info@bizsoftsolution.net',
     subject: `Message from ${userName} (${email}) for ${services}`,
     text: `
     Name: ${userName}

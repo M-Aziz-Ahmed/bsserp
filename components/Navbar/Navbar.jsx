@@ -152,7 +152,7 @@ const Navbar = () => {
                     {/* CTA Buttons */}
                     <div className="d-none d-lg-flex align-items-center gap-3">
                         <Link
-                            href="https://wa.me/yournumber"
+                            href="https://wa.me/+923004919926"
                             className="text-success whatsapp-icon"
                             >
                             <FaWhatsapp size={40} />
@@ -202,7 +202,7 @@ const Navbar = () => {
                                 </li>
                             ))}
                             <li className="nav-item mt-3">
-                                <Link href="https://wa.me/yournumber" className="d-flex align-items-center gap-2 text-dark nav-link">
+                                <Link href="https://wa.me/+923004919926" className="d-flex align-items-center gap-2 text-dark nav-link">
                                     <FaWhatsapp size={30} className="text-success whatsapp-icon" />
                                     WhatsApp
                                 </Link>
