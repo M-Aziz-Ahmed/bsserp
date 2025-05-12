@@ -3,7 +3,7 @@ import Link from "next/link"
 import { useState } from "react";
 import Image from "next/image"
 import { FaWhatsapp, FaChevronDown, FaChevronUp, FaToggleOn } from 'react-icons/fa'
-import { usePathname } from "next/navigation";
+import { redirect, usePathname } from "next/navigation";
 
 const Navbar = () => {
     const pathname = usePathname()
@@ -77,6 +77,12 @@ const Navbar = () => {
 
     const [activeSubmenu, setActiveSubmenu] = useState(null);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [message, setMessage] = useState('');
+    const [modal, setModal] = useState(false);
+
+    const sendMessage = ()=>{
+        redirect(`https://wa.me/+923004919926?text=${message}`)
+    }
 
     const handleMobileMenuToggle = () => {
         setMobileMenuOpen(!mobileMenuOpen);
@@ -151,12 +157,23 @@ const Navbar = () => {
 
                     {/* CTA Buttons */}
                     <div className="d-none d-lg-flex align-items-center gap-3">
-                        <Link
-                            href="https://wa.me/+923004919926"
+                        <div
+                            onClick={()=>setModal(true)}
                             className="text-success whatsapp-icon"
                             >
                             <FaWhatsapp size={40} />
-                        </Link>
+                        </div>
+                        {modal&&(
+                            <div className="absolute top-100 z-50 bg-white p-3 py-0 pb-3">
+                                <div className="flex justify-end h3 mb-3">
+                                    <span className="cursor-pointer" onClick={()=>setModal(false)}>X</span></div>
+                            <div className="form-floating mb-3">
+                                <input type="text" className="form-control" placeholder="" value={message} onChange={(e)=>setMessage(e.target.value)}/>
+                                <label htmlFor="">Your Message</label>
+                            </div>
+                                <div className="btn btn-theme" onClick={sendMessage}>Send</div>
+                            </div>
+                        )}
                         <Link href="/demo" className="btn btn-theme px-4 py-2 rounded-pill fw-medium">
                             Try Out
                         </Link>
