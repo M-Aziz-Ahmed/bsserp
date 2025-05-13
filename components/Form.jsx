@@ -216,7 +216,7 @@ const Form = ({alert, setAlert}) => {
                                         defaultCountry={countryCode}
                                         value={formValues.phoneNumber}
                                         onChange={handlePhoneChange}
-                                        className={`form-control ${errors.phoneNumber ? 'is-invalid' : ''}`}
+                                        className={`form-control flex ${errors.phoneNumber ? 'is-invalid' : ''}`}
                                         placeholder=" "
                                         style={{
                                             height: 'calc(3.5rem + 2px)',
