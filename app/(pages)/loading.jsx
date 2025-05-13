@@ -1,10 +1,8 @@
+import Loader from "@/components/Loader"
+
 const Loading = ({ }) => {
     return (
-        <div className="d-flex justify-content-center align-items-center text" style={{ height: '60vh' }}>
-            <div className="spinner-border" role="status">
-                <span className="visually-hidden">Loading...</span>
-            </div>
-        </div>
+        <Loader/>
     )
 }
 

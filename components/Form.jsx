@@ -210,7 +210,7 @@ const Form = ({alert, setAlert}) => {
 
                             {/* Phone */}
                             <div className="col-md-6">
-                                <div className="form-floating mb-3">
+                                <div className="form-floating mb-3 flex">
                                     <PhoneInput
                                         international
                                         defaultCountry={countryCode}
