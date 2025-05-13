@@ -1,5 +1,6 @@
 
 import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next"
 import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "../../components/Navbar/Navbar";
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
       <body
         className={`bg-white antialiased`}
       >
+          <Analytics />
           <Navbar />
           {children}
           <Footer />
