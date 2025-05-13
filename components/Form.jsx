@@ -216,12 +216,13 @@ const Form = ({alert, setAlert}) => {
                                         defaultCountry={countryCode}
                                         value={formValues.phoneNumber}
                                         onChange={handlePhoneChange}
-                                        className={`form-control flex ${errors.phoneNumber ? 'is-invalid' : ''}`}
+                                        className={`form-control ${errors.phoneNumber ? 'is-invalid' : ''}`}
                                         placeholder=" "
                                         style={{
                                             height: 'calc(3.5rem + 2px)',
                                             lineHeight: 2.25,
                                             padding: '5%',
+                                            display:'flex',
                                         }}
                                     />
                                     <label htmlFor="phone-input" className="text-muted">
