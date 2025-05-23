@@ -116,7 +116,7 @@ const Customerservice = ({setModel}) => {
                     <div className="col-lg-8">
                         <div className="bg-white p-4 p-lg-5 rounded-4 shadow-sm">
                             <p className="lead text-center text-secondary mb-0">
-                                Our global teams use advanced support portals to resolve client issues efficiently. We leverage tools like Skype, WhatsApp, and Google Meet for real-time assistance. SowaanERP is committed to exceeding your expectations, making your experience not just good, but truly outstanding. Our ERP solution enhances business functionality and management systems, making it ideal for both small businesses and large enterprises.
+                                Our global teams use advanced support portals to resolve client issues efficiently. We leverage tools like Skype, WhatsApp, and Google Meet for real-time assistance. BSSERP is committed to exceeding your expectations, making your experience not just good, but truly outstanding. Our ERP solution enhances business functionality and management systems, making it ideal for both small businesses and large enterprises.
                             </p>
                         </div>
                     </div>

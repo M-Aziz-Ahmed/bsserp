@@ -42,7 +42,7 @@ const Page = ({ }) => {
                                     ERP software in Pakistan
                                 </h1>
                                 <p className="text-secondary fs-4 mb-5">
-                                    SowaanERP offers a cutting-edge cloud-based <span className="text-highlight fw-bold"> manufacturing ERP software in Pakistan </span>. It streamlines production processes, accurately monitors material use, ensures effective capacity planning, manages subcontracting efficiently, and much more. This software is designed to enhance your business operations significantly!
+                                    BSSERP offers a cutting-edge cloud-based <span className="text-highlight fw-bold"> manufacturing ERP software in Pakistan </span>. It streamlines production processes, accurately monitors material use, ensures effective capacity planning, manages subcontracting efficiently, and much more. This software is designed to enhance your business operations significantly!
                                 </p>
                                 <div className="d-flex justify-content-center">
                                     <button className="btn btn-theme btn-lg rounded-5 px-4 py-3 fs-5 fw-semibold">

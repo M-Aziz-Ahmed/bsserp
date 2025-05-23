@@ -10,7 +10,7 @@ const Card = ({ setModel }) => {
                         </h2>
                         <button
                             className="btn btn-theme btn-lg  rounded-5 h-fit"
-                            aria-label="Request a demo of SowaanERP"
+                            aria-label="Request a demo of BSSERP"
                             onClick={() => { setModel(true) }}
                         >
                             Request Demo
