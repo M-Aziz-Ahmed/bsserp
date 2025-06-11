@@ -20,7 +20,23 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Biz Soft Solutions",
-  description: "Description of the Biz Soft Solutions website",
+  description: "Best ERP Software  Best ERP software for Enterprises & SMBs Discover the most affordable and the best ERP software made to improve your daily work, increase efficiency, and take your business to the next level.",
+  openGraph: {
+    title: "Biz Soft Solutions",
+    description: "Best ERP Software  Best ERP software for Enterprises & SMBs Discover the most affordable and the best ERP software made to improve your daily work, increase efficiency, and take your business to the next level.",
+    url: "https://bizsoftsolutions.net",
+    siteName: "Biz Soft Solutions",
+    images: [
+      {
+        url: "/logo.png",
+        width: 800,
+        height: 600,
+        alt: "Biz Soft Solutions Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {
